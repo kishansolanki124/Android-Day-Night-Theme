@@ -1,0 +1,19 @@
+Demo application for enable/disable night mode in app
+
+reference URL: https://github.com/YarikSOffice/Dark-Theme-Playground
+
+if we want to check which theme is currently enable by user then we can save the current theme in shared preference
+
+When you want to Enable/disable dark theme:
+
+1.  forcefully enable dark theme, use
+
+    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+
+2.  forcefully disable dark theme, use
+
+    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+3.  set app theme based on android settings of dark mode, that is if dark mode is enabled then the theme will be set to a dark theme, if not then the default theme, but this will only work in version >= Android version Q
+
+    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
